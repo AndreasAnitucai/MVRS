@@ -100,15 +100,15 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _Noise_Scale: 8.3
-    - _Noise_gate: 0.3
+    - _Noise_Scale: 8.2
+    - _Noise_gate: 0.0585
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Random_Color_Range: 0.5
-    - _Random_Height_Range: 0.16
-    - _Random_Offset_Range: 0.3
+    - _Random_Height_Range: 0.133
+    - _Random_Offset_Range: 0.277
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -116,12 +116,12 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Tiling: 3.5
+    - _Tiling: 4
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.6509434, g: 0.4477492, b: 0.14431292, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Fill_Color: {r: 0.4716981, g: 0.44722313, b: 0.44722313, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
