@@ -25,16 +25,11 @@ public class VisionCone : MonoBehaviour
         VisionAngle *= Mathf.Deg2Rad;
     }
 
-
-
-
-
     void Update()
     {
         DrawVisionCone();//calling the vision cone function everyframe just so the cone is updated every frame
+
     }
-
-
 
     void DrawVisionCone()//this method creates the vision cone mesh
     {
