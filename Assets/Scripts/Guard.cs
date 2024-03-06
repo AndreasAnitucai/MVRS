@@ -92,7 +92,7 @@ public class Guard : MonoBehaviour
         }
     }
 
-
+    //draws spheres and line between waypoints in Scene view
     private void OnDrawGizmos()
     {
         Vector3 startPosition = pathHolder.GetChild (0).position;
