@@ -34,7 +34,7 @@ public class Guard : MonoBehaviour
         for(int i = 0; i < waypoints.Length; i++)
         {
             waypoints[i] = pathHolder.GetChild(i).position;
-            waypoints[i] = new Vector3(waypoints[i].x, transform.position.y, waypoints[i].z);
+            waypoints[i] = new Vector3(waypoints[i].x, waypoints[i].y, waypoints[i].z);
         }
 
         StartCoroutine(followPath(waypoints)); 
@@ -82,14 +82,16 @@ public class Guard : MonoBehaviour
         while(true)
         {
             agent.SetDestination(targetWaypoint);
-            if(transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
+            if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
             {
                 targetWaypointIndex = (targetWaypointIndex+1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
+                Debug.Log("Waypoint[" + targetWaypointIndex + "]");
                 yield return new WaitForSeconds(waitTime);
             }
             yield return null;
         }
+
     }
 
     //draws spheres and line between waypoints in Scene view
