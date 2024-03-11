@@ -81,12 +81,14 @@ public class Guard : MonoBehaviour
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
         while(true)
         {
+            Debug.Log("Waypoint[" + targetWaypointIndex + "]");
             agent.SetDestination(targetWaypoint);
             if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
             {
+                Debug.Log("Waypoint[" + targetWaypointIndex + " (2)]" + (targetWaypointIndex + 1) % waypoints.Length);
                 targetWaypointIndex = (targetWaypointIndex+1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
-                Debug.Log("Waypoint[" + targetWaypointIndex + "]");
+                
                 yield return new WaitForSeconds(waitTime);
             }
             yield return null;
