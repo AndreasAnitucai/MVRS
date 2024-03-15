@@ -83,9 +83,10 @@ public class Guard : MonoBehaviour
         {
             Debug.Log("Waypoint[" + targetWaypointIndex + "]");
             agent.SetDestination(targetWaypoint);
+            Debug.Log("Cake");
             if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
             {
-                Debug.Log("Waypoint[" + targetWaypointIndex + " (2)]" + (targetWaypointIndex + 1) % waypoints.Length);
+                Debug.Log("Waypoint[" + targetWaypointIndex + " (2)] " + (targetWaypointIndex + 1) % waypoints.Length);
                 targetWaypointIndex = (targetWaypointIndex+1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
                 
