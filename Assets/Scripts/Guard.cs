@@ -11,7 +11,7 @@ public class Guard : MonoBehaviour
     public float speed = 5;
     public float waitTime = 1f;
     public NavMeshAgent agent;
-    public GameObject player;
+    public GameObject player; 
 
     private void Start()
     {
@@ -32,6 +32,7 @@ public class Guard : MonoBehaviour
         transform.position = waypoints[0];
 
         int targetWaypointIndex = 1;
+        int tempWaypointIndex = 0;
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
         while(true)
         {
@@ -52,6 +53,24 @@ public class Guard : MonoBehaviour
                 {
                     yield return null;
                 }
+                    for (int j = 0; j < waypoints.Length; j++)
+                    {
+                        float distTmp = Vector3.Distance(this.gameObject.transform.position, waypoints[tempWaypointIndex]);
+                        float distOri = Vector3.Distance(this.gameObject.transform.position, waypoints[j]);
+                        //if (waypoints[j]/*targetWaypointIndex=+1]*/ != null)
+                        //{
+                            if (distTmp >= distOri)
+                            {
+                                targetWaypointIndex = j;
+                                Debug.Log("What: " + j);
+                                targetWaypoint = waypoints[j];
+                                tempWaypointIndex = j;
+                            }
+                        //}
+
+                    }
+
+
             }
             else
             {
