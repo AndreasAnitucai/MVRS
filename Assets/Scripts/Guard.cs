@@ -1,4 +1,3 @@
-using Oculus.Interaction.Input;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -12,10 +11,11 @@ public class Guard : MonoBehaviour
     public float speed = 5;
     public float waitTime = 1f;
     public NavMeshAgent agent;
+    public GameObject player;
 
     private void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
         // Goes in a path
         Vector3[] waypoints = new Vector3[pathHolder.childCount];
         for(int i = 0; i < waypoints.Length; i++)
@@ -26,6 +26,7 @@ public class Guard : MonoBehaviour
 
         StartCoroutine(followPath(waypoints)); 
     }
+
     IEnumerator followPath(Vector3[] waypoints)
     {
         transform.position = waypoints[0];
@@ -34,22 +35,42 @@ public class Guard : MonoBehaviour
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
         while(true)
         {
-            Debug.Log("Waypoint[" + targetWaypointIndex + "]");
-            agent.SetDestination(targetWaypoint);
-            Debug.Log("Cake");
-            if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
+            if(this.gameObject.GetComponent<FieldOfView>().canSeePlayer == true)
             {
-                Debug.Log("Waypoint[" + targetWaypointIndex + " (2)] " + (targetWaypointIndex + 1) % waypoints.Length);
-                targetWaypointIndex = (targetWaypointIndex+1) % waypoints.Length;
-                targetWaypoint = waypoints[targetWaypointIndex];
-                
-                yield return new WaitForSeconds(waitTime);
+                Vector3 playerPos = player.transform.position;
+                agent.speed = 3;
+                agent.stoppingDistance = 2;
+                agent.autoBraking = false;
+                agent.SetDestination(playerPos);
+                float distance = Vector3.Distance(playerPos, this.gameObject.transform.position);
+                if( distance <= 2)
+                {
+                    //Game over
+                    Debug.Log("cake");
+                }
+                for(int i = 0; i < 5; i++)//prevents inf Loop
+                {
+                    yield return null;
+                }
             }
-            yield return null;
+            else
+            {
+                agent.speed = 5;
+                agent.stoppingDistance = 0;
+                agent.autoBraking = true;
+                agent.SetDestination(targetWaypoint);
+                if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
+                {
+                    targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
+                    targetWaypoint = waypoints[targetWaypointIndex];
+                    yield return new WaitForSeconds(waitTime);
+                }
+                yield return null;
+            }
+            
         }
 
     }
-
     //draws spheres and line between waypoints in Scene view
     private void OnDrawGizmos()
     {

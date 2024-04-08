@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FieldOfView : MonoBehaviour
@@ -47,7 +46,7 @@ public class FieldOfView : MonoBehaviour
                 if (!Physics.Raycast(transform.position, diractionToTarget, distanceToTarget, obstructionMask)) canSeePlayer = true;
                 else canSeePlayer = false;
             }
-            else canSeePlayer = false;
+            else canSeePlayer = false;  
 
         }
         else if (canSeePlayer) canSeePlayer = false;
