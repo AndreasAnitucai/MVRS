@@ -78,9 +78,11 @@ public class Guard : MonoBehaviour
                 agent.stoppingDistance = 0;
                 agent.autoBraking = true;
                 agent.SetDestination(targetWaypoint);
+                Debug.Log("Cake: " + targetWaypointIndex);
                 if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
                 {
                     targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
+                    Debug.Log("targetWayPointIndex: " + targetWaypointIndex);
                     targetWaypoint = waypoints[targetWaypointIndex];
                     yield return new WaitForSeconds(waitTime);
                 }
