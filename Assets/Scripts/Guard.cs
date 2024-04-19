@@ -30,13 +30,12 @@ public class Guard : MonoBehaviour
     IEnumerator followPath(Vector3[] waypoints)
     {
         transform.position = waypoints[0];
-
         int targetWaypointIndex = 1;
         int tempWaypointIndex = 0;
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
         while(true)
         {
-            if(this.gameObject.GetComponent<FieldOfView>().canSeePlayer == true)
+            if(this.gameObject.GetComponent<FieldOfView>().canSeePlayer)
             {
                 Vector3 playerPos = player.transform.position;
                 agent.speed = 3;
@@ -69,8 +68,6 @@ public class Guard : MonoBehaviour
                         //}
 
                     }
-
-
             }
             else
             {
@@ -78,24 +75,17 @@ public class Guard : MonoBehaviour
                 agent.stoppingDistance = 0;
                 agent.autoBraking = true;
                 agent.SetDestination(targetWaypoint);
-                Debug.Log("Cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint   );
-                if (transform.position.x == targetWaypoint.x)
+                Debug.Log("Cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint + " modul: " + (targetWaypointIndex + 1) % waypoints.Length);
+                if (Mathf.Approximately(transform.position.x, targetWaypoint.x) && Mathf.Approximately(transform.position.z, targetWaypoint.z))
                 {
-                    Debug.Log("X is True");
-                }
-                if (transform.position.z == targetWaypoint.z)
-                {
-                    Debug.Log("Z is True");
-                }
-                if (transform.position.x == targetWaypoint.x && transform.position.z == targetWaypoint.z)
-                    {
                     targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
                     Debug.Log("targetWayPointIndex: " + targetWaypointIndex);
+                    Debug.Log("targetWayPoint: " + targetWaypoint);
                     targetWaypoint = waypoints[targetWaypointIndex];
                     yield return new WaitForSeconds(waitTime);
                 }
-            }
                 yield return null;
+            }
             
         }
 
