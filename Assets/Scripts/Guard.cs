@@ -30,6 +30,7 @@ public class Guard : MonoBehaviour
     IEnumerator followPath(Vector3[] waypoints)
     {
         transform.position = waypoints[0];
+        this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
         int targetWaypointIndex = 1;
         int tempWaypointIndex = 0;
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
@@ -38,7 +39,7 @@ public class Guard : MonoBehaviour
             if(this.gameObject.GetComponent<FieldOfView>().canSeePlayer)
             {
                 Vector3 playerPos = player.transform.position;
-                agent.speed = 3;
+                agent.speed = 6;
                 agent.stoppingDistance = 2;
                 agent.autoBraking = false;
                 agent.SetDestination(playerPos);
@@ -68,6 +69,7 @@ public class Guard : MonoBehaviour
                         //}
 
                     }
+
             }
             else
             {
@@ -75,7 +77,7 @@ public class Guard : MonoBehaviour
                 agent.stoppingDistance = 0;
                 agent.autoBraking = true;
                 agent.SetDestination(targetWaypoint);
-                Debug.Log("Cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint + " modul: " + (targetWaypointIndex + 1) % waypoints.Length);
+                Debug.Log("Name: "+ this.gameObject.name +" cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint + " modul: " + (targetWaypointIndex + 1) % waypoints.Length);
                 if (Mathf.Approximately(transform.position.x, targetWaypoint.x) && Mathf.Approximately(transform.position.z, targetWaypoint.z))
                 {
                     targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
