@@ -7,6 +7,7 @@ TagManager:
   - Object
   - GuardPath
   - Obstacle
+  - Score
   layers:
   - Default
   - TransparentFX

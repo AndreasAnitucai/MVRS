@@ -81,8 +81,7 @@ public class Guard : MonoBehaviour
                 if (Mathf.Approximately(transform.position.x, targetWaypoint.x) && Mathf.Approximately(transform.position.z, targetWaypoint.z))
                 {
                     targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
-                    Debug.Log("targetWayPointIndex: " + targetWaypointIndex);
-                    Debug.Log("targetWayPoint: " + targetWaypoint);
+
                     targetWaypoint = waypoints[targetWaypointIndex];
                     yield return new WaitForSeconds(waitTime);
                 }
