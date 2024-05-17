@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Items : MonoBehaviour
@@ -20,6 +21,11 @@ public class Items : MonoBehaviour
     {
         transform.RotateAround(this.gameObject.transform.position, Dir1, 60 * Time.deltaTime);
         transform.RotateAround(this.gameObject.transform.position, Dir2, 60 * Time.deltaTime);
+
+        if(this.gameObject.transform.parent != null)
+        {
+            StartCoroutine(fuckingDestroyThisObjectPLEASE());
+        }
     }
     IEnumerator fuckingDestroyThisObjectPLEASE()
     {
