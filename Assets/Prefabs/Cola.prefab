@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3753565061549207403}
   - component: {fileID: 6465120978163517370}
   - component: {fileID: 226028623677437667}
-  - component: {fileID: 2427691532153970114}
   - component: {fileID: -4961252867422666286}
   m_Layer: 0
   m_Name: Cola
@@ -83,7 +82,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23467
       groupID: 0
     - vertices_:
@@ -116,7 +115,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23478
       groupID: 0
     - vertices_:
@@ -149,7 +148,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23489
       groupID: 0
     - vertices_:
@@ -182,7 +181,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23511
       groupID: 0
     - vertices_:
@@ -215,7 +214,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23522
       groupID: 0
     - vertices_:
@@ -248,7 +247,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23533
       groupID: 0
     - vertices_:
@@ -281,7 +280,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23555
       groupID: 0
     - vertices_:
@@ -314,7 +313,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23566
       groupID: 0
     - vertices_:
@@ -347,7 +346,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23577
       groupID: 0
     - vertices_:
@@ -1820,7 +1819,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113938
       groupID: 0
     - vertices_:
@@ -1853,7 +1852,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113939
       groupID: 0
     - vertices_:
@@ -1886,7 +1885,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113940
       groupID: 0
     - vertices_:
@@ -1919,7 +1918,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113941
       groupID: 0
     - vertices_:
@@ -1952,7 +1951,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113942
       groupID: 0
     - vertices_:
@@ -1985,7 +1984,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113943
       groupID: 0
     - vertices_:
@@ -2018,7 +2017,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113944
       groupID: 0
     - vertices_:
@@ -2051,7 +2050,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113945
       groupID: 0
     - vertices_:
@@ -2084,7 +2083,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113946
       groupID: 0
     - vertices_:
@@ -2117,7 +2116,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113947
       groupID: 0
     - vertices_:
@@ -2150,7 +2149,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113948
       groupID: 0
     - vertices_:
@@ -2183,7 +2182,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113949
       groupID: 0
     - vertices_:
@@ -2216,7 +2215,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113950
       groupID: 0
     - vertices_:
@@ -2249,7 +2248,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113951
       groupID: 0
     - vertices_:
@@ -2282,7 +2281,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: -0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113952
       groupID: 0
     - vertices_:
@@ -2315,7 +2314,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113953
       groupID: 0
     - vertices_:
@@ -2348,7 +2347,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113954
       groupID: 0
     - vertices_:
@@ -2381,7 +2380,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: -0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113955
       groupID: 0
     - vertices_:
@@ -2414,7 +2413,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113956
       groupID: 0
     - vertices_:
@@ -2447,7 +2446,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113957
       groupID: 0
     - vertices_:
@@ -2480,7 +2479,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: -0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113958
       groupID: 0
     - vertices_:
@@ -2513,7 +2512,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113959
       groupID: 0
     - vertices_:
@@ -2546,7 +2545,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113960
       groupID: 0
     - vertices_:
@@ -2579,7 +2578,7 @@ MonoBehaviour:
         normal_: {x: -0.7933534, y: 0, z: -0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113961
       groupID: 0
     - vertices_:
@@ -2612,7 +2611,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113962
       groupID: 0
     - vertices_:
@@ -2645,7 +2644,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113963
       groupID: 0
     - vertices_:
@@ -2678,7 +2677,7 @@ MonoBehaviour:
         normal_: {x: -0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113964
       groupID: 0
     - vertices_:
@@ -2711,7 +2710,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113965
       groupID: 0
     - vertices_:
@@ -2744,7 +2743,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113966
       groupID: 0
     - vertices_:
@@ -2777,7 +2776,7 @@ MonoBehaviour:
         normal_: {x: -0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113967
       groupID: 0
     - vertices_:
@@ -4262,7 +4261,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: -0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23071
       groupID: 0
     - vertices_:
@@ -4295,7 +4294,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: -0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23082
       groupID: 0
     - vertices_:
@@ -4328,7 +4327,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: -0, z: 0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23093
       groupID: 0
     - vertices_:
@@ -4361,7 +4360,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: -0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23115
       groupID: 0
     - vertices_:
@@ -4394,7 +4393,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: -0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23126
       groupID: 0
     - vertices_:
@@ -4427,7 +4426,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: -0, z: 0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23137
       groupID: 0
     - vertices_:
@@ -4460,7 +4459,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: -0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23159
       groupID: 0
     - vertices_:
@@ -4493,7 +4492,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: -0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23170
       groupID: 0
     - vertices_:
@@ -4526,7 +4525,7 @@ MonoBehaviour:
         normal_: {x: 0.7933534, y: -0, z: 0.6087614}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23181
       groupID: 0
     - vertices_:
@@ -4559,7 +4558,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: -0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23203
       groupID: 0
     - vertices_:
@@ -4592,7 +4591,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: -0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23214
       groupID: 0
     - vertices_:
@@ -4625,7 +4624,7 @@ MonoBehaviour:
         normal_: {x: 0.6087614, y: -0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23225
       groupID: 0
     - vertices_:
@@ -4658,7 +4657,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: -0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23247
       groupID: 0
     - vertices_:
@@ -4691,7 +4690,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: -0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23258
       groupID: 0
     - vertices_:
@@ -4724,7 +4723,7 @@ MonoBehaviour:
         normal_: {x: 0.38268346, y: -0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23269
       groupID: 0
     - vertices_:
@@ -4757,7 +4756,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: -0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23291
       groupID: 0
     - vertices_:
@@ -4790,7 +4789,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: -0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23302
       groupID: 0
     - vertices_:
@@ -4823,7 +4822,7 @@ MonoBehaviour:
         normal_: {x: 0.13052598, y: -0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23313
       groupID: 0
     - vertices_:
@@ -4856,7 +4855,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23335
       groupID: 0
     - vertices_:
@@ -4889,7 +4888,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23346
       groupID: 0
     - vertices_:
@@ -4922,7 +4921,7 @@ MonoBehaviour:
         normal_: {x: -0.13052607, y: 0, z: 0.9914449}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23357
       groupID: 0
     - vertices_:
@@ -4955,7 +4954,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23379
       groupID: 0
     - vertices_:
@@ -4988,7 +4987,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23390
       groupID: 0
     - vertices_:
@@ -5021,7 +5020,7 @@ MonoBehaviour:
         normal_: {x: -0.38268346, y: 0, z: 0.92387956}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23401
       groupID: 0
     - vertices_:
@@ -5054,7 +5053,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23423
       groupID: 0
     - vertices_:
@@ -5087,7 +5086,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23434
       groupID: 0
     - vertices_:
@@ -5120,7 +5119,7 @@ MonoBehaviour:
         normal_: {x: -0.6087614, y: 0, z: 0.7933534}
         distance_: -0.19828899
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 23445
       groupID: 0
     - vertices_:
@@ -7043,7 +7042,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113932
       groupID: 0
     - vertices_:
@@ -7076,7 +7075,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113933
       groupID: 0
     - vertices_:
@@ -7109,7 +7108,7 @@ MonoBehaviour:
         normal_: {x: 0.9914449, y: 0, z: -0.13052621}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113934
       groupID: 0
     - vertices_:
@@ -7142,7 +7141,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113935
       groupID: 0
     - vertices_:
@@ -7175,7 +7174,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113936
       groupID: 0
     - vertices_:
@@ -7208,7 +7207,7 @@ MonoBehaviour:
         normal_: {x: 0.9238795, y: 0, z: -0.38268355}
         distance_: -0.19828898
       matID_: 0
-      flags_: 3
+      flags_: 1
       instanceID_: 113937
       groupID: 0
     - vertices_:
@@ -9337,7 +9336,7 @@ MonoBehaviour:
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
   HideHandGraphics: 0
-  ParentToHands: 0
+  ParentToHands: 1
   ParentHandModel: 1
   SnapHandModel: 1
   CanBeDropped: 1
@@ -9381,33 +9380,6 @@ MonoBehaviour:
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
---- !u!54 &2427691532153970114
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136978942215530644}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &-4961252867422666286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9420,7 +9392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2916b4df1327c34478130614dc5e6885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemChild: {fileID: 0}
+  scoreHolder: {fileID: 0}
 --- !u!43 &-1307334141911297262
 Mesh:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using System.Threading;
 using tripolygon.UModeler;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Guard : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class Guard : MonoBehaviour
     public float speed = 5;
     public float waitTime = 1f;
     public NavMeshAgent agent;
-    public GameObject player; 
+    public GameObject player;
+    public GameObject uIScore;
 
     private void Start()
     {
+        uIScore = GameObject.FindGameObjectWithTag("Score");
         player = GameObject.FindGameObjectWithTag("Player");
         // Goes in a path
         Vector3[] waypoints = new Vector3[pathHolder.childCount];
@@ -44,12 +47,20 @@ public class Guard : MonoBehaviour
                 agent.autoBraking = false;
                 agent.SetDestination(playerPos);
                 float distance = Vector3.Distance(playerPos, this.gameObject.transform.position);
-                if( distance <= 2)
+                if(distance <= 2)
                 {
                     //Game over
-                    Debug.Log("cake");
+                    uIScore.transform.GetComponent<Score>().LostGame();
+                    //Debug.Log("cake");
+                    StartCoroutine(PleaseJustReloadTheMap());
                 }
-                for(int i = 0; i < 5; i++)//prevents inf Loop
+                IEnumerator PleaseJustReloadTheMap()
+                {
+                    yield return new WaitForSeconds(10f);
+                    Application.Quit();
+                    //SceneManager.LoadScene("Map01");
+                }
+                for (int i = 0; i < 5; i++)//prevents inf Loop
                 {
                     yield return null;
                 }
@@ -62,7 +73,7 @@ public class Guard : MonoBehaviour
                             if (distTmp >= distOri)
                             {
                                 targetWaypointIndex = j;
-                                Debug.Log("What: " + j);
+                                //Debug.Log("What: " + j);
                                 targetWaypoint = waypoints[j];
                                 tempWaypointIndex = j;
                             }
@@ -77,7 +88,7 @@ public class Guard : MonoBehaviour
                 agent.stoppingDistance = 0;
                 agent.autoBraking = true;
                 agent.SetDestination(targetWaypoint);
-                Debug.Log("Name: "+ this.gameObject.name +" cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint + " modul: " + (targetWaypointIndex + 1) % waypoints.Length);
+                //Debug.Log("Name: "+ this.gameObject.name +" cake: " + targetWaypointIndex + " Vector3: "+targetWaypoint + " modul: " + (targetWaypointIndex + 1) % waypoints.Length);
                 if (Mathf.Approximately(transform.position.x, targetWaypoint.x) && Mathf.Approximately(transform.position.z, targetWaypoint.z))
                 {
                     targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;

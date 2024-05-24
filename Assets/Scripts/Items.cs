@@ -11,9 +11,9 @@ public class Items : MonoBehaviour
     Vector3 Dir2;
     void Start()
     {
-
+        transform.position += new Vector3(0,1,0);
         scoreHolder = GameObject.FindWithTag("Score");
-        this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+        //this.gameObject.GetComponent<Rigidbody>().useGravity = false;
         Dir1 = Random.insideUnitSphere.normalized;
         Dir2 = Random.insideUnitSphere.normalized;
     }
@@ -24,15 +24,17 @@ public class Items : MonoBehaviour
 
         if(this.gameObject.transform.parent != null)
         {
-            StartCoroutine(fuckingDestroyThisObjectPLEASE());
+            StartCoroutine(FuckingDestroyThisObjectPLEASE());
+            transform.eulerAngles = transform.parent.eulerAngles;
         }
     }
-    IEnumerator fuckingDestroyThisObjectPLEASE()
+    IEnumerator FuckingDestroyThisObjectPLEASE()
     {
-        Debug.Log("Cake 2");
+        //Debug.Log("Cake 2");
         yield return new WaitForSeconds(3f);
-        Debug.Log("Cake 3");
+        //Debug.Log("Cake 3");
         scoreHolder.GetComponent<Score>().increaseScore();
+        scoreHolder.GetComponent<Score>().decreaseLootAmount();
         Destroy(this.gameObject);
     }
 }
